@@ -1,0 +1,232 @@
+//     Filter Format -
+//     Name of Filter:      property1,property2a|property2b             :Group Name
+//
+// Name of Filter: Must be a unique name.
+// Properties: May use logical-or (|) and logical-and (,). Use properties and operations below.
+// Group Name: Category a filter belongs to.
+
+//  Available properties:
+//      String (name) properties:
+//        classname
+//        basename
+//        path
+//        name
+//        desc
+//      Numerical properties:
+//        itemquality
+//        rarity
+//        ilvl
+//        tier
+//        numberofsockets
+//        veiled
+//        fractured
+//      Boolean properties:
+//        identified
+//        corrupted
+//        influenced
+//        Elder
+//        Shaper
+//        Crusader
+//        Hunter
+//        Redeemer
+//        Warlord
+//        blightedMap
+//        elderGuardianMap
+//
+//  Available operations:
+//    String (name) operations:
+//      !=	(not equal)
+//      =		(equal)
+//      ^		(contains)
+//      !^	(not contains)
+//    
+//    Numerical operations:
+//      !=	(not equal)
+//      =		(equal)
+//      >		(bigger)
+//      <		(less)
+//      <=	(less or equal)
+//      >=	(bigger or equal)
+//    
+//    Boolean operations:
+//      !		(not/invert)
+
+// Ritual League
+Blood-Filled Vessel:    BaseName=Blood-filled Vessel                                                            :Ritual
+Craftable Watchstone:   ClassName=AtlasRegionUpgradeItem,BaseName^Chromium|BaseName^Titanium|BaseName^Platinum  :Ritual
+Crescent Splinter:      BaseName=Crescent Splinter                                                              :Ritual
+Elevated Sextant:       BaseName=Elevated Sextant                                                               :Ritual
+Invitations:            ClassName=MiscMapItem,BaseName^Invitation                                               :Ritual
+Ritual Splinter:        BaseName=Ritual Splinter                                                                :Ritual
+Ritual Vessel:          BaseName=Ritual Vessel                                                                  :Ritual
+Maven's Writ:           BaseName=The Maven's Writ                                                               :Ritual
+
+// Heist League
+Contract:                ClassName=HeistContract                                                                :Heist
+Blueprint:               ClassName=HeistBlueprint                                                               :Heist
+Equipment:               ClassName^HeistEquipment                                                               :Heist
+
+// Harvest League
+Facetor's Lens:         ClassName=StackableCurrency,BaseName^Facetor                                            :Harvest
+Harvest Blessings:      ClassName=StackableCurrency,Path^CurrencyHarbingerBlessing                              :Harvest
+Harvest Lures:          ClassName=MapFragment,BaseName^Lures                                                    :Harvest
+Harvest Offerings:      ClassName=MapFragment,BaseName=Gift to the Goddess|BaseName=Tribute to the Goddess|BaseName=Dedication to the Goddess   :Harvest
+
+// Delirium League
+Simulacrum Splinter:    ClassName=StackableCurrency,BaseName=Simulacrum Splinter                                :Delirium
+Simulacrum Map:         ClassName=MapFragment,BaseName=Simulacrum                                               :Delirium
+Delirium Orb:           ClassName=StackableCurrency,BaseName^Delirium Orb                                       :Delirium
+Cluster Jewel:          ClassName=Jewel,BaseName^Cluster                                                        :Delirium
+
+// Metamorph League
+Uber Elder Fragments:   ClassName=MapFragment,BaseName=Fragment of Knowledge|BaseName=Fragment of Shape|BaseName=Fragment of Terror|BaseName=Fragment of Emptiness                  :Metamorph
+Elder Fragments:        ClassName=MapFragment,BaseName=Fragment of Enslavement|BaseName=Fragment of Eradication|BaseName=Fragment of Constriction|BaseName=Fragment of Purification :Metamorph
+Shaper Fragments:       ClassName=MapFragment,BaseName=Fragment of the Phoenix|BaseName=Fragment of the Minotaur|BaseName=Fragment of the Chimera|BaseName=Fragment of the Hydra    :Metamorph
+Catalysts:              ClassName=StackableCurrency,BaseName^Catalyst                                           :Metamorph
+Metamorph Samples:      ClassName=MetamorphosisDNA                                                              :Metamorph
+
+// Blight League
+Blight Oils:            ClassName=StackableCurrency,Path^Mushrune                                               :Blight
+
+// Legion League
+Incubators:             ClassName=Incubator                                                                     :Legion
+Legion Fragments:       ClassName=MapFragment,Path^CurrencyLegionFragment                                       :Legion
+Legion Splinters:       ClassName=StackableCurrency,Path^CurrencyLegion                                         :Legion
+Timeless Jewel:         ClassName=Jewel,BaseName=Timeless Jewel                                                 :Legion
+
+// Betrayal League
+Scarabs:                ClassName=MapFragment,BaseName^Scarab                                                   :Betrayal
+
+// Delve League
+Fossils:                ClassName=StackableCurrency,BaseName^Fossil                                             :Delve
+Alchemical Resonators:  ClassName=DelveStackableSocketableCurrency,BaseName^Alchemical                          :Delve
+Chaotic Resonators:     ClassName=DelveStackableSocketableCurrency,BaseName^Chaotic                             :Delve
+
+// Incursion League
+Incursion Vial:         ClassName=StackableCurrency,BaseName^Vial of                                            :Incursion
+
+// Bestiary League
+Bestiary Orb:           ClassName=StackableCurrency,BaseName=Bestiary Orb                                       :Bestiary
+
+// Abyss League
+Unidd Abyss Jewel 82+:  ClassName=AbyssJewel,!identified,ilvl>=82                                               :Abyss
+Unidd Abyss Jewel:      ClassName=AbyssJewel,!identified                                                        :Abyss
+Idd Abyss Jewel 82+:    ClassName=AbyssJewel,ilvl>=82                                                           :Abyss
+Idd Abyss Jewel:        ClassName=AbyssJewel                                                                    :Abyss
+
+// Breach League
+Breach Blessings:       ClassName=StackableCurrency,BaseName^Blessing of,Path^CurrencyBreach                    :Breach
+Breach Breachstones:    ClassName=MapFragment,BaseName^Breachstone                                              :Breach
+Breach Splinters:       ClassName=StackableCurrency,BaseName^Splinter of,Path^CurrencyBreach                    :Breach
+Breach Rings:           ClassName=Ring,BaseName=Breach Ring                                                     :Breach
+
+// Essence League
+Essences:               ClassName=StackableCurrency,BaseName^Essence                                            :Essence
+Remnants:               ClassName=StackableCurrency,BaseName^Remnant of Corruption                              :Essence
+
+// Prophecy League     
+Prophecies:             ClassName=StackableCurrency,BaseName=Prophecy                                           :Prophecy
+Prophecy Fragments:     ClassName=MapFragment,Path^ProphecyFragment                                             :Prophecy
+
+// Talisman League
+Talismans:              Classname=Amulet,BaseName^Talisman                                                      :Talisman
+
+// Ambush & Invasion League
+Mortal Grief:           ClassName=MapFragment,BaseName=Mortal Grief                                             :Ambush and Invasion
+Mortal Hope:            ClassName=MapFragment,BaseName=Mortal Hope                                              :Ambush and Invasion
+Mortal Ignorance:       ClassName=MapFragment,BaseName=Mortal Ignorance                                         :Ambush and Invasion
+Mortal Rage:            ClassName=MapFragment,BaseName=Mortal Rage                                              :Ambush and Invasion
+Sacrifice at Dawn:      ClassName=MapFragment,BaseName=Sacrifice at Dawn                                        :Ambush and Invasion
+Sacrifice at Dusk:      ClassName=MapFragment,BaseName=Sacrifice at Dusk                                        :Ambush and Invasion
+Sacrifice at Midnight:  ClassName=MapFragment,BaseName=Sacrifice at Midnight                                    :Ambush and Invasion
+Sacrifice at Noon:      ClassName=MapFragment,BaseName=Sacrifice at Noon                                        :Ambush and Invasion
+
+// Base Maps
+Divine Vessel:          ClassName=MapFragment,BaseName=Divine Vessel                                            :Maps
+Offering to Goddess:    ClassName=MapFragment,BaseName=Offering to the Goddess                                  :Maps
+Blighted Maps:          ClassName=Map,blightedMap                                                               :Maps
+Elder Influe. Maps:     ClassName=Map,elderGuardianMap                                                          :Maps
+Maps:                   ClassName=Map                                                                           :Maps
+Unique Watchstone:      ClassName=AtlasRegionUpgradeItem,BaseName=Ivory Watchstone,Rarity=Unique                :Maps
+
+// Base Gems
+Awakened Gems:          ClassName^Skill Gem,Name^Awakened                                                       :Skill Gems
+Special Gems:           ClassName^Skill Gem,Name=Empower|Name=Enhance|Name=Enlighten                            :Skill Gems
+High Quality Gems:      ClassName^Skill Gem,ItemQuality>11                                                      :Skill Gems
+Low Quality Gems:       ClassName^Skill Gem,ItemQuality>0                                                       :Skill Gems
+No Quality Gems:        ClassName^Skill Gem                                                                     :Skill Gems
+
+// Base Flasks
+Unique Flasks:          ClassName^Flask,Rarity=Unique                                                           :Flasks
+Quality Flasks:         ClassName^Flask,ItemQuality>0                                                           :Flasks
+Flasks:                 ClassName^Flask                                                                         :Flasks
+
+// Base Game
+Divination:             ClassName=DivinationCard                                                                :Base
+Reliquary Keys:         ClassName=MiscMapItem,BaseName=Timeworn Reliquary Key                                   :Base
+Currency:               ClassName=StackableCurrency,Path!^Harvest,Path!^Scarab,Path!^Facetor,Path!^Delirium Orb,BaseName!^Catalyst,Path!^Mushrune,Path!^CurrencyLegion,BaseName!^Fossil,BaseName!^Vial of,BaseName!=Bestiary Orb,BaseName!^CurrencyBreach,BaseName!^CurrencyEssence,BaseName!=Remnant of Corruption,BaseName!=Prophecy,BaseName!^Talisman :Base
+
+// Vendor Recipes
+20Q Chisel:             BaseName=Stone Hammer|BaseName=Rock Breaker|BaseName=Gavel,ItemQuality=20               :Chisel Recipe
+AnyQ Chisel:            BaseName=Stone Hammer|BaseName=Rock Breaker|BaseName=Gavel,Rarity=Normal                :Chisel Recipe
+
+//Crafting Items
+Sorcerer Boots:         Rarity=Normal,BaseName=Sorcerer Boots                                                   :Crafting Items
+Leather Belt:           Rarity=Normal,BaseName=Leather Belt                                                     :Crafting Items
+Gold Amulet:            Rarity=Normal,BaseName=Gold Amulet                                                      :Crafting Items
+86+ Bases:              Ilvl>=86,BaseName=Bone Helmet|BaseName=Gripped Gloves|BaseName=Opal Ring|BaseName=Spiked Gloves|BaseName=Steel Ring|BaseName=Stygian Vise|BaseName=Vermillion Ring  :Crafting Items
+85 Bases:               Ilvl=85,BaseName=Bone Helmet|BaseName=Gripped Gloves|BaseName=Opal Ring|BaseName=Spiked Gloves|BaseName=Steel Ring|BaseName=Stygian Vise|BaseName=Vermillion Ring   :Crafting Items
+84 Bases:               Ilvl=84,BaseName=Bone Helmet|BaseName=Gripped Gloves|BaseName=Opal Ring|BaseName=Spiked Gloves|BaseName=Steel Ring|BaseName=Stygian Vise|BaseName=Vermillion Ring   :Crafting Items
+Bases:                  BaseName=Bone Helmet|BaseName=Gripped Gloves|BaseName=Opal Ring|BaseName=Spiked Gloves|BaseName=Steel Ring|BaseName=Stygian Vise|BaseName=Vermillion Ring           :Crafting Items
+
+// Influenced Items
+Elder:                  Elder                                                                                   :Influenced Items
+Shaper:                 Shaper                                                                                  :Influenced Items
+Crusader:               Crusader                                                                                :Influenced Items
+Hunter:                 Hunter                                                                                  :Influenced Items
+Redeemer:               Redeemer                                                                                :Influenced Items
+Warlord:                Warlord                                                                                 :Influenced Items
+Other:                  influenced                                                                              :Influenced Items
+
+// Veiled Items
+Veiled:                 Veiled>0                                                                                :Veiled Items
+
+// Chaos Recipe LVL 2 (unindentified rares ilvl 60 or above)
+CR-Weapons:             !influenced,!identified,Rarity=Rare,ilvl>=60,ClassName=Bow|ClassName^One Hand|ClassName=Wand|ClassName=Dagger|ClassName=Rune Dagger :Chaos Recipe
+CR-Amulets:             !influenced,!identified,Rarity=Rare,ilvl>=60,ClassName=Amulet                           :Chaos Recipe
+CR-Rings:               !influenced,!identified,Rarity=Rare,ilvl>=60,ClassName=Ring                             :Chaos Recipe
+CR-Belts:               !influenced,!identified,Rarity=Rare,ilvl>=60,ClassName=Belt                             :Chaos Recipe
+CR-Helmets:             !influenced,!identified,Rarity=Rare,ilvl>=60,ClassName=Helmet                           :Chaos Recipe
+CR-Chests:              !influenced,!identified,Rarity=Rare,ilvl>=60,numberofsockets!=6,ClassName=Body Armour   :Chaos Recipe
+CR-Boots:               !influenced,!identified,Rarity=Rare,ilvl>=60,ClassName=Boots                            :Chaos Recipe
+CR-Gloves:              !influenced,!identified,Rarity=Rare,ilvl>=60,ClassName=Gloves                           :Chaos Recipe
+
+// Non-Chaos Recipe Rares (eg. indentified)
+//Idd-Weapons:            identified,Rarity=Rare,ClassName^Two Hand|ClassName^One Hand|ClassName=Bow|ClassName=Staff|ClassName=Sceptre|ClassName=Wand|ClassName=Dagger|ClassName=Claw|ClassName=Shield|ClassName=Quiver|ClassName=Rune Dagger :Rares
+//Idd-Amulets:            identified,Rarity=Rare,ClassName=Amulet                                                 :Rares
+//Idd-Rings:              identified,Rarity=Rare,ClassName=Ring                                                   :Rares
+//Idd-Belts:              identified,Rarity=Rare,ClassName=Belt                                                   :Rares
+//Idd-Helms:              identified,Rarity=Rare,ClassName=Helmet                                                 :Rares
+//Idd-Body Armours:       identified,Rarity=Rare,ClassName=Body Armour                                            :Rares
+//Idd-Boots:              identified,Rarity=Rare,ClassName=Boots                                                  :Rares
+//Idd-Gloves:             identified,Rarity=Rare,ClassName=Gloves                                                 :Rares
+
+// Craftable stuff
+//Craft-Weapons:          Rarity=Normal|Rarity=Magic,ClassName^Two Hand|ClassName^One Hand|ClassName=Bow|ClassName=Staff|ClassName=Sceptre|ClassName=Wand|ClassName=Dagger|ClassName=Claw|ClassName=Shield|ClassName=Quiver|ClassName=Rune Dagger :Crafting
+//Craft-Amulets:          Rarity=Normal|Rarity=Magic,ClassName=Amulet                                             :Crafting
+//Craft-Rings:            Rarity=Normal|Rarity=Magic,ClassName=Ring                                               :Crafting
+//Craft-Belts:            Rarity=Normal|Rarity=Magic,ClassName=Belt                                               :Crafting
+//Craft-Helms:            Rarity=Normal|Rarity=Magic,ClassName=Helmet                                             :Crafting
+//Craft-Chests:           Rarity=Normal|Rarity=Magic,ClassName=Body Armour                                        :Crafting
+//Craft-Boots:            Rarity=Normal|Rarity=Magic,ClassName=Boots                                              :Crafting
+//Craft-Gloves:           Rarity=Normal|Rarity=Magic,ClassName=Gloves                                             :Crafting
+
+// Uniques
+//Uniques-Weapons:        identified,Rarity=Unique,ClassName^Two Hand|ClassName^One Hand|ClassName=Bow|ClassName=Staff|ClassName=Sceptre|ClassName=Wand|ClassName=Dagger|ClassName=Claw|ClassName=Shield|ClassName=Quiver|ClassName=Rune Dagger :Uniques
+//Uniques-Amulets:        identified,Rarity=Unique,ClassName=Amulet                                               :Uniques
+//Uniques-Rings:          identified,Rarity=Unique,ClassName=Ring                                                 :Uniques
+//Uniques-Belts:          identified,Rarity=Unique,ClassName=Belt                                                 :Uniques
+//Uniques-Helms:          identified,Rarity=Unique,ClassName=Helmet                                               :Uniques
+//Uniques-Chests:         identified,Rarity=Unique,ClassName=Body Armour                                          :Uniques
+//Uniques-Boots:          identified,Rarity=Unique,ClassName=Boots                                                :Uniques
+//Uniques-Gloves:         identified,Rarity=Unique,ClassName=Gloves                                               :Uniques
