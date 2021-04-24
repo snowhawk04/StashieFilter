@@ -79,7 +79,9 @@ Watchstone:                 ClassName=AtlasRegionUpgradeItem,BaseName=Ivory Watc
 
 Blighted Maps:              blightedMap                                                                                                             :Maps
 Elder Maps:                 elderGuardianMap                                                                                                        :Maps
+Incursions:                 BaseName=Chronicle of Atzoatl                                                                                           :Maps
 Invitations:                ClassName=MiscMapItem,BaseName^Invitation                                                                               :Maps
+Reliquary Keys:             BaseName=Timeworn Reliquary Key                                                                                         :Maps
 Maps:                       ClassName=Map,!blightedMap,!elderGuardianMap                                                                            :Maps
 
 Breach:                     ClassName=StackableCurrency,BaseName^Splinter of                                                                        :Default Tabs
@@ -91,4 +93,5 @@ Metamorph:                  ClassName=MetamorphosisDNA|path^CurrencyJewelleryQua
 Divination:                 ClassName=DivinationCard                                                                                                :Default Tabs
 Essence:                    BaseName^Essence|BaseName^Remnant                                                                                       :Default Tabs
 Fragment:                   ClassName=MapFragment                                                                                                   :Default Tabs
+//Uniques:                  identified,Rarity=Unique,ClassName!=Map                                                                                 :Default Tabs
 Currency:			        ClassName=StackableCurrency,path!^Essence,BaseName!^Remnant,path!^CurrencyDelveCrafting,BaseName!^Splinter,Path!^CurrencyItemisedProphecy,Path!^CurrencyAfflictionOrb,Path!^Mushrune	:Default Tabs
