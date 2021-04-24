@@ -1,0 +1,94 @@
+// Chaos Recipe LVL 2 (unindentified rares ilvl 60 or above)
+CR-Weapons:                 !influenced,!identified,Rarity=Rare,ilvl>=60,ClassName=Bow|ClassName^One Hand|ClassName=Wand|ClassName=Dagger|ClassName=Rune Dagger :Chaos Recipe
+CR-Amulets:                 !influenced,!identified,Rarity=Rare,ilvl>=60,ClassName=Amulet                                                           :Chaos Recipe
+CR-Rings:                   !influenced,!identified,Rarity=Rare,ilvl>=60,ClassName=Ring                                                             :Chaos Recipe
+CR-Belts:                   !influenced,!identified,Rarity=Rare,ilvl>=60,ClassName=Belt                                                             :Chaos Recipe
+CR-Helmets:                 !influenced,!identified,Rarity=Rare,ilvl>=60,ClassName=Helmet                                                           :Chaos Recipe
+CR-Chests:                  !influenced,!identified,Rarity=Rare,ilvl>=60,numberofsockets!=6,ClassName=Body Armour                                   :Chaos Recipe
+CR-Boots:                   !influenced,!identified,Rarity=Rare,ilvl>=60,ClassName=Boots                                                            :Chaos Recipe
+CR-Gloves:                  !influenced,!identified,Rarity=Rare,ilvl>=60,ClassName=Gloves                                                           :Chaos Recipe
+
+// Chaos Recipe LVL 1 (eg. indentified)
+//Idd-Weapons:              identified,Rarity=Rare,ClassName^Two Hand|ClassName^One Hand|ClassName=Bow|ClassName=Staff|ClassName=Sceptre|ClassName=Wand|ClassName=Dagger|ClassName=Claw|ClassName=Shield|ClassName=Quiver|ClassName=Rune Dagger :Rares
+//Idd-Amulets:              identified,Rarity=Rare,ClassName=Amulet                                                                                 :Rares
+//Idd-Rings:                identified,Rarity=Rare,ClassName=Ring                                                                                   :Rares
+//Idd-Belts:                identified,Rarity=Rare,ClassName=Belt                                                                                   :Rares
+//Idd-Helms:                identified,Rarity=Rare,ClassName=Helmet                                                                                 :Rares
+//Idd-Body Armours:         identified,Rarity=Rare,ClassName=Body Armour                                                                            :Rares
+//Idd-Boots:                identified,Rarity=Rare,ClassName=Boots                                                                                  :Rares
+//Idd-Gloves:               identified,Rarity=Rare,ClassName=Gloves                                                                                 :Rares
+
+// Craftable stuff
+//Craft-Weapons:            Rarity=Normal|Rarity=Magic,ClassName^Two Hand|ClassName^One Hand|ClassName=Bow|ClassName=Staff|ClassName=Sceptre|ClassName=Wand|ClassName=Dagger|ClassName=Claw|ClassName=Shield|ClassName=Quiver|ClassName=Rune Dagger :Crafting
+//Craft-Amulets:            Rarity=Normal|Rarity=Magic,ClassName=Amulet                                                                             :Crafting
+//Craft-Rings:              Rarity=Normal|Rarity=Magic,ClassName=Ring                                                                               :Crafting
+//Craft-Belts:              Rarity=Normal|Rarity=Magic,ClassName=Belt                                                                               :Crafting
+//Craft-Helms:              Rarity=Normal|Rarity=Magic,ClassName=Helmet                                                                             :Crafting
+//Craft-Chests:             Rarity=Normal|Rarity=Magic,ClassName=Body Armour                                                                        :Crafting
+//Craft-Boots:              Rarity=Normal|Rarity=Magic,ClassName=Boots                                                                              :Crafting
+//Craft-Gloves:             Rarity=Normal|Rarity=Magic,ClassName=Gloves                                                                             :Crafting
+
+// Uniques
+//Uniques-Weapons:          identified,Rarity=Unique,ClassName^Two Hand|ClassName^One Hand|ClassName=Bow|ClassName=Staff|ClassName=Sceptre|ClassName=Wand|ClassName=Dagger|ClassName=Claw|ClassName=Shield|ClassName=Quiver|ClassName=Rune Dagger :Uniques
+//Uniques-Amulets:          identified,Rarity=Unique,ClassName=Amulet                                                                               :Uniques
+//Uniques-Rings:            identified,Rarity=Unique,ClassName=Ring                                                                                 :Uniques
+//Uniques-Belts:            identified,Rarity=Unique,ClassName=Belt                                                                                 :Uniques
+//Uniques-Helms:            identified,Rarity=Unique,ClassName=Helmet                                                                               :Uniques
+//Uniques-Chests:           identified,Rarity=Unique,ClassName=Body Armour                                                                          :Uniques
+//Uniques-Boots:            identified,Rarity=Unique,ClassName=Boots                                                                                :Uniques
+//Uniques-Gloves:           identified,Rarity=Unique,ClassName=Gloves                                                                               :Uniques
+
+// Base Gems
+Awakened Gems:              ClassName^Skill Gem,Name^Awakened                                                                                       :Skill Gems
+Special Gems:               ClassName^Skill Gem,Name=Empower|Name=Enhance|Name=Enlighten                                                            :Skill Gems
+Vaal Gems:                  ClassName^Skill Gem,BaseName^Vaal                                                                                       :Skill Gems
+High Quality Gems:          ClassName^Skill Gem,ItemQuality>11                                                                                      :Skill Gems
+Low Quality Gems:           ClassName^Skill Gem,ItemQuality>0                                                                                       :Skill Gems
+No Quality Gems:            ClassName^Skill Gem                                                                                                     :Skill Gems
+
+// Base Flasks
+Unique Flasks:              ClassName^Flask,Rarity=Unique                                                                                           :Flasks
+Quality Flasks:             ClassName^Flask,ItemQuality>0                                                                                           :Flasks
+Flasks:                     ClassName^Flask                                                                                                         :Flasks
+
+// Special Items
+Elder:                      Elder                                                                                                                   :Special Items
+Shaper:                     Shaper                                                                                                                  :Special Items
+Crusader:                   Crusader                                                                                                                :Special Items
+Hunter:                     Hunter                                                                                                                  :Special Items
+Redeemer:                   Redeemer                                                                                                                :Special Items
+Warlord:                    Warlord                                                                                                                 :Special Items
+Other:                      influenced                                                                                                              :Special Items
+Veiled:                     Veiled>0                                                                                                                :Special Items
+
+// Jewels
+Abyss:                      ClassName=Abyss Jewel                                                                                                   :Jewel
+Clusters:                   path^JewelPassiveTree                                                                                                   :Jewel
+Normal:                     Rarity!=Unique,BaseName=Crimson Jewel|BaseName=Viridian Jewel|BaseName=Cobalt Jewel                                     :Jewel
+
+// Misc
+Blessings:                  ClassName=StackableCurrency,BaseName^Blessing of                                                                        :Misc
+Blood-Filled Vessel:        BaseName=Blood-Filled Vessel                                                                                            :Misc
+Facetor Lens:               ClassName=StackableCurrency,BaseName^Facetor                                                                            :Misc
+Heist:                      ClassName=HeistContract|ClassName=HeistBlueprint|path^HeistEquipment                                                    :Misc 
+Incubator:                  ClassName=Incubator                                                                                                     :Misc
+Lure:                       BaseName^Lures                                                                                                          :Misc
+Prophecy:                   ClassName=Prophecy                                                                                                      :Misc
+Ultimatum:                  BaseName=Inscribed Ultimatum                                                                                            :Misc
+Watchstone:                 ClassName=AtlasRegionUpgradeItem,BaseName=Ivory Watchstone|BaseName^Chromium|BaseName^Titanium|BaseName^Platinum        :Misc
+
+Blighted Maps:              blightedMap                                                                                                             :Maps
+Elder Maps:                 elderGuardianMap                                                                                                        :Maps
+Invitations:                ClassName=MiscMapItem,BaseName^Invitation                                                                               :Maps
+Maps:                       ClassName=Map,!blightedMap,!elderGuardianMap                                                                            :Maps
+
+Breach:                     ClassName=StackableCurrency,BaseName^Splinter of                                                                        :Default Tabs
+Blight:                     path^Mushrune                                                                                                           :Default Tabs
+Delirium:                   path^CurrencyAffliction                                                                                                 :Default Tabs
+Delve:                      path^CurrencyDelveCrafting|path^DelveStackableSocketableCurrency                                                        :Default Tabs
+Legion:                     path^CurrencyLegion                                                                                                     :Default Tabs
+Metamorph:                  ClassName=MetamorphosisDNA|path^CurrencyJewelleryQuality                                                                :Default Tabs
+Divination:                 ClassName=DivinationCard                                                                                                :Default Tabs
+Essence:                    BaseName^Essence|BaseName^Remnant                                                                                       :Default Tabs
+Fragment:                   ClassName=MapFragment                                                                                                   :Default Tabs
+Currency:			        ClassName=StackableCurrency,path!^Essence,BaseName!^Remnant,path!^CurrencyDelveCrafting,BaseName!^Splinter,Path!^CurrencyItemisedProphecy,Path!^CurrencyAfflictionOrb,Path!^Mushrune	:Default Tabs
