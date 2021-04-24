@@ -69,11 +69,12 @@ Normal:                     Rarity!=Unique,BaseName=Crimson Jewel|BaseName=Virid
 // Misc
 Blessings:                  ClassName=StackableCurrency,BaseName^Blessing of                                                                        :Misc
 Blood-Filled Vessel:        BaseName=Blood-Filled Vessel                                                                                            :Misc
+Breach Rings:               ClassName=Ring,BaseName=Breach Ring                                                                                     :Misc
 Facetor Lens:               ClassName=StackableCurrency,BaseName^Facetor                                                                            :Misc
 Heist:                      ClassName=HeistContract|ClassName=HeistBlueprint|path^HeistEquipment                                                    :Misc 
 Incubator:                  ClassName=Incubator                                                                                                     :Misc
 Lure:                       BaseName^Lures                                                                                                          :Misc
-Prophecy:                   ClassName=Prophecy                                                                                                      :Misc
+Prophecy:                   BaseName=Prophecy                                                                                                       :Misc
 Ultimatum:                  BaseName=Inscribed Ultimatum                                                                                            :Misc
 Watchstone:                 ClassName=AtlasRegionUpgradeItem,BaseName=Ivory Watchstone|BaseName^Chromium|BaseName^Titanium|BaseName^Platinum        :Misc
 
