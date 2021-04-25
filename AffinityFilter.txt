@@ -76,9 +76,9 @@ Incubator:                  ClassName=Incubator                                 
 Lure:                       BaseName^Lures                                                                                                          :Misc
 Prophecy:                   BaseName=Prophecy                                                                                                       :Misc
 Ultimatum:                  BaseName=Inscribed Ultimatum                                                                                            :Misc
-Watchstone:                 ClassName=AtlasRegionUpgradeItem,BaseName=Ivory Watchstone|BaseName^Chromium|BaseName^Titanium|BaseName^Platinum        :Misc
+Watchstone:                 identified,ClassName=AtlasRegionUpgradeItem,BaseName=Ivory Watchstone|BaseName^Chromium|BaseName^Titanium|BaseName^Platinum  :Misc
 
-Blighted Maps:              blightedMap                                                                                                             :Maps
+Blighted Maps:              affinity,blightedMap                                                                                                    :Maps
 Elder Maps:                 elderGuardianMap                                                                                                        :Maps
 Incursions:                 BaseName=Chronicle of Atzoatl                                                                                           :Maps
 Invitations:                ClassName=MiscMapItem,BaseName^Invitation                                                                               :Maps
@@ -93,6 +93,6 @@ Legion:                     affinity,path^CurrencyLegion                        
 Metamorph:                  affinity,ClassName=MetamorphosisDNA|path^CurrencyJewelleryQuality                                                       :Default Tabs
 Divination:                 affinity,ClassName=DivinationCard                                                                                       :Default Tabs
 Essence:                    affinity,BaseName^Essence|BaseName^Remnant                                                                              :Default Tabs
-Fragment:                   affinity,ClassName=MapFragment                                                                                          :Default Tabs
+Fragment:                   affinity,ClassName=MapFragment|BaseName^Splinter                                                                        :Default Tabs
 //Uniques:                  identified,Rarity=Unique,ClassName!=Map                                                                                 :Default Tabs
 Currency:			        ClassName=StackableCurrency,path!^Essence,BaseName!^Remnant,path!^CurrencyDelveCrafting,BaseName!^Splinter,Path!^CurrencyItemisedProphecy,Path!^CurrencyAfflictionOrb,Path!^Mushrune	:Default Tabs
